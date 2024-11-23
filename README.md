@@ -1,2 +1,2 @@
 # ISU-1
-Volume and Surface Area Calculator
+The Surface Area and Volume Calculator is a multi-functional online calculator that helps one to quickly and easily solve for major measurements of the most common geometric shapes, including a sphere, cube, cylinder, cone, pyramid, and prism. It gives quick and correct results in both surface area and volume using the dimensions provided by the user, which include radius, height, width, and length. This calculator can calculate the volume and surface area for shapes ranging from a cube to a torus!
