@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+     <body>
+        <h1> 
+            Hello, World!
+        </h1>
+        <h2>Welcome to my surface area amd volume calculator from many different and unique shapes!</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .calculator { margin: 20px; }
+        .calculator h3 { color: #333; }
+        .form-group { margin-bottom: 10px; }
+        label { display: inline-block; width: 120px; }
+        input[type="number"] { padding: 5px; width: 150px; }
+        button { padding: 5px 10px; margin-top: 10px; }
+        .result { margin-top: 10px; font-weight: bold; }
+        
+    </style>
+</head>
+<body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculator</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', sans-serif;
+            text-align: center;
+        }
+        .shape-container {
+            margin: 20px;
+            border: 5px solid #1e43e9da;
+            padding: 20px;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #1e43e9da;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+</html>
+
+<html lang="en">
+
+<body>
+
+
+
+    <div class="shape-container">
+        <h2>Rectangular Prism</h2>
+        <label for="length">Length:</label>
+        <input type="number" id="length" placeholder="Enter length">
+        <label for="width">Width:</label>
+        <input type="number" id="width" placeholder="Enter width">
+        <label for="height">Height:</label>
+        <input type="number" id="height" placeholder="Enter height">
+        <button onclick="calculateRectangularPrism()">Calculate</button>
+        <p id="rectangular-prism-result"></p>
+
+        <h2>Cube</h2>
+        <label for="Length">Length:</label>
+        <input type="number" id="Length" placeholder="Enter length">
+        <button onclick="calculateCube()">Calculate</button>
+        <p id="cube-result"></p>
+
+        <h2>Cone</h2>
+        <label for="cone-radius">Radius:</label>
+        <input type="number" id="cone-radius" placeholder="Enter radius">
+        <label for="cone-height">Height:</label>
+        <input type="number" id="cone-height" placeholder="Enter height">
+        <button onclick="calculateCone()">Calculate</button>
+        <p id="cone-result"></p>
+
+        <h2>Cylinder</h2>
+        <label for="cylinder-radius">Radius:</label>
+        <input type="number" id="cylinder-radius" placeholder="Enter radius">
+        <label for="cylinder-height">Height:</label>
+        <input type="number" id="cylinder-height" placeholder="Enter height">
+        <button onclick="calculateCylinder()">Calculate</button>
+        <p id="cylinder-result"></p>
+
+        <h2>Rectangular Based Pyramid</h2>
+        <label for="pyramid-length">Length:</label>
+        <input type="number" id="pyramid-length" placeholder="Enter length">
+        <label for="pyramid-width">Width:</label>
+        <input type="number" id="pyramid-width" placeholder="Enter width">
+        <label for="pyramid-height">Height:</label>
+        <input type="number" id="pyramid-height" placeholder="Enter height">
+        <button onclick="calculateRectangularPyramid()">Calculate</button>
+        <p id="pyramid-result"></p>
+
+        <h2>Triangular Based Prism</h2>
+        <label for="prism-base-hypotenuse">Base Hypotenuse:</label>
+        <input type="number" id="prism-base-hypotenuse" placeholder="Enter base hypotenuse">
+        <label for="prism-base-length-2">Base Length:</label>
+        <input type="number" id="prism-base-length-2" placeholder="Enter base length">
+        <label for="prism-base-length-3">Base Length:</label>
+        <input type="number" id="prism-base-length-3" placeholder="Enter base length">
+        <label for="prism-base-height">Base Height:</label>
+        <input type="number" id="prism-base-height" placeholder="Enter base height">
+        <label for="prism-height">Prism Height:</label>
+        <input type="number" id="prism-height" placeholder="Enter prism height">
+        <button onclick="calculateTriangularPrism()">Calculate</button>
+        <p id="prism-result"></p>
+
+        <h2>Triangular Based Pyramid</h2>
+        <label for="side1">Side 1:</label>
+        <input type="number" id="side1" placeholder="Enter length">
+        <label for="side2">Side 2:</label>
+        <input type="number" id="side2" placeholder="Enter length">
+        <label for="side3">Side 3:</label>
+        <input type="number" id="side3" placeholder="Enter length"> 
+        <label for="height">Height:</label>
+        <input type="number" id="height" placeholder="Enter length">
+        <button onclick="calculateTriPy()">Calculate</button>
+        <p id="TriPyresult"></p>
+
+        <h2>Sphere</h2>
+        <label for="sphere-radius">Radius:</label>
+        <input type="number" id="sphere-radius" placeholder="Enter radius">
+        <button onclick="calculateSphere()">Calculate</button>
+        <p id="sphere-result"></p>
+
+        <h2>Tetrahedron</h2>
+        <label for="edge">Side Length:</label>
+        <input type="number" id="edge" placeholder="Enter side length">
+        <button onclick="calculateTetrahedron()">Calculate</button>
+        <p id="tetrahedron-result"></p>
+
+        <h2>Octahedron</h2>
+        <label for="octahedron-side">Side Length:</label>
+        <input type="number" id="octahedron-side" placeholder="Enter side length">
+        <button onclick="calculateOctahedron()">Calculate</button>
+        <p id="octahedron-result"></p>
+
+        <h2>Dodecahedron</h2>
+        <label for="dodecahedron-side">Side Length:</label>
+        <input type="number" id="dodecahedron-side" placeholder="Enter side length">
+        <button onclick="calculateDodecahedron()">Calculate</button>
+        <p id="dodecahedron-result"></p>
+
+        <h2>Pentagonal Prism</h2>
+        <label for="pen-base-edge">Base Edge:</label>
+        <input type="number" id="pen-base-edge" placeholder="Enter base edge">
+        <label for="pen-height">Prism Height:</label>
+        <input type="number" id="pen-height" placeholder="Enter prism height">
+        <button onclick="calculatePentagonalPrism()">Calculate</button>
+        <p id="pen-result"></p>
+
+        <h2>Hexagonal Prism</h2>
+        <label for="hex-base-edge">Base Edge:</label>
+        <input type="number" id="hex-base-edge" placeholder="Enter base edge">
+        <label for="hex-height">Prism Height:</label>
+        <input type="number" id="hex-height" placeholder="Enter prism height">
+        <button onclick="calculateHexagonalPrism()">Calculate</button>
+        <p id="hex-result"></p>
+
+        <h2>Hexagonal Pyramid</h2>
+        <label for="hex-py-Base-edge">Base Edge:</label>
+        <input type="number" id="hex-py-Base-edge" placeholder="Enter pyramid base length">
+        <label for="Hex-py-height">Height:</label>
+        <input type="number" id="Hex-py-height" placeholder="Enter pyramid height">
+        <button onclick="calculateHexagonalPyramid()">Calculate</button>
+        <p id = "Hex-py-result"></p>
+
+        <h2>Torus</h2>
+        <label for="torus-minor-radius">Minor Radius:</label>
+        <input type="number" id="torus-minor-radius" placeholder="Enter the minor radius">
+        <label for="torus-major-radius">Major Radius:</label>
+        <input type="number" id="torus-major-radius" placeholder="Enter the major radius">
+        <button onclick="calculateTorus()">Calculate</button>
+        <p id = "Torus"></p>
+
+        <h2>Elipsoid</h2>
+        <label for="axis-1">Axis 1:</label>
+        <input type="number" id="axis-1" placeholder="Enter a axis">
+        <label for="axis-2">Axis 2:</label>
+        <input type="number" id="axis-2" placeholder="Enter a axis">
+        <label for="axis-3">Axis 3:</label>
+        <input type="number" id="axis-3" placeholder="Enter a axis">
+        <button onclick="calculateElipsoid()">Calculate</button>
+        <p id = "Elipsoid"></p>
+
+        <h2>Paraboloid</h2>
+        <label for="paraboloidRadius">Radius (r):</label>
+        <input type="number" id="paraboloidRadius" placeholder="Enter radius">
+        <label for="paraboloidHeight">Height (h):</label>
+        <input type="number" id="paraboloidHeight" placeholder="Enter height">
+        <button onclick="calculateParaboloid()">Calculate Paraboloid</button>
+        <p id = "Para"></p>
+
+        <h2>Hyperboloid</h2>
+        <label for="hyperboloidR1">Radius at base (R1):</label>
+        <input type="number" id="hyperboloidR1" placeholder=" Enter radius at base">
+        <label for="hyperboloidR2">Radius at top (R2):</label>
+        <input type="number" id="hyperboloidR2" placeholder=" Enter radius at top ">
+        <label for="hyperboloidHeight">Height (h):</label>
+        <input type="number" id="hyperboloidHeight" placeholder=" Enter height ">
+        <label for="hyperboloidR">Radius at midsection (R):</label>
+        <input type="number" id="hyperboloidR" placeholder="Radius at midsection">
+        <button onclick="calculateHyperboloid()">Calculate Hyperboloid</button>
+        <p id = "Hyper"></p>
+
+        <h2>Pentagonal Pyramid</h2>
+        <label for="sideLength">Side Length of Pentagonal Base (a):</label>
+        <input type="number" id="sideLength" placeholder=" Enter side length ">
+        <label for="height">Vertical Height (h):</label>
+        <input type="number" id="height" placeholder=" Enter height ">
+        <label for="slantHeight">Slant Height (sl):</label>
+        <input type="number" id="slantHeight" placeholder=" Enter slant Height ">
+        <button onclick="calculatePentagonalPyramid()">Calculate Pentagonal Pyramid</button>
+        <p id="Pent"></p>
+
+        <h2>Icosahedron</h2>
+        <label for="edgeLength5">Edge Length (a):</label>
+        <input type="number" id="edgeLength5" placeholder="Enter edge length">
+        <button onclick="calculateIcosahedron()">Calculate Icosahedron</button>
+        <p id = "Icosa"></p>
+
+
+    </div>
+
+    <script>
+
+        function calculateRectangularPrism() {
+            const length = parseFloat(document.getElementById("length").value);
+            const width = parseFloat(document.getElementById("width").value);
+            const height = parseFloat(document.getElementById("height").value);
+
+            const surfaceArea = 2 * (length * width + length * height + width * height);
+            const volume = length * width * height;
+
+            document.getElementById("rectangular-prism-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+        
+        function calculateCone() {
+            const radius = parseFloat(document.getElementById("cone-radius").value);
+            const height = parseFloat(document.getElementById("cone-height").value);
+
+            const slantHeight = Math.sqrt(radius * radius + height * height);
+            const surfaceArea = Math.PI * radius * (radius + slantHeight);
+            const volume = (1/3) * Math.PI * radius * radius * height;
+
+            document.getElementById("cone-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        
+        function calculateSphere() {
+            const radius = parseFloat(document.getElementById("sphere-radius").value);
+            const surfaceArea = 4 * Math.PI * (radius * radius);
+            const volume = (4/3) * Math.PI * (radius * radius * radius);
+
+            document.getElementById("sphere-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateCylinder() {
+            const radius = parseFloat(document.getElementById("cylinder-radius").value);
+            const height = parseFloat(document.getElementById("cylinder-height").value);
+
+            const surfaceArea = Math.PI * radius * 2 * height + 2 * Math.PI * (radius * radius);
+            const volume = Math.PI * radius * radius * height;
+
+            document.getElementById("cylinder-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+       
+        function calculateRectangularPyramid() {
+            const length = parseFloat(document.getElementById("pyramid-length").value);
+            const width = parseFloat(document.getElementById("pyramid-width").value);
+            const height = parseFloat(document.getElementById("pyramid-height").value);   
+
+            const slantHeight1 = Math.sqrt(((width * width) / (2 * 2)) + (height * height));
+            const slantHeight2 = Math.sqrt(((length * length) / (2 * 2)) + (height * height));
+
+            const surfaceArea = (length * width) + length * slantHeight1 + width * slantHeight2;
+            const volume = (1/3) * length * width * height;
+
+            document.getElementById("pyramid-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateTriangularPrism() {
+            const baseLength = parseFloat(document.getElementById("prism-base-hypotenuse").value);
+            const baseHeight = parseFloat(document.getElementById("prism-base-height").value);
+            const prismHeight = parseFloat(document.getElementById("prism-height").value);
+            const baseLength2 = parseFloat(document.getElementById("prism-base-length-2").value);
+            const baseLength3 = parseFloat(document.getElementById("prism-base-length-3").value);
+
+            const baseArea = 0.5 * baseLength * baseHeight;
+            const surfaceArea = (baseArea * 2) + (prismHeight * baseLength2) + (prismHeight * baseLength3) + (prismHeight * baseLength)
+            const volume = baseArea * prismHeight;
+
+            document.getElementById("prism-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateTetrahedron() {
+            const side = parseFloat(document.getElementById("edge").value);
+
+            const surfaceArea = Math.sqrt(3) * side * side;
+            const height = (Math.sqrt(6) / 3) * side;
+            const volume = (1/12) * Math.sqrt(2) * side * side * side;
+
+            document.getElementById("tetrahedron-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateOctahedron() {
+            const side = parseFloat(document.getElementById("octahedron-side").value);
+
+            const surfaceArea = 2 * Math.sqrt(3) * side * side;
+            const height = Math.sqrt(2) * side;
+            const volume = (1/3) * Math.sqrt(2) * side * side * side;
+
+            document.getElementById("octahedron-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+        
+        function calculateDodecahedron() {
+            const side = parseFloat(document.getElementById("dodecahedron-side").value);
+
+            const surfaceArea = 3 * Math.sqrt(25 + 10 * Math.sqrt(5)) * side * side;
+            const volume = (1/4) * (15 + 7 * Math.sqrt(5)) * side * side * side;
+
+            document.getElementById("dodecahedron-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateTriPy() {
+            const side1 = parseFloat(document.getElementById("side1").value);
+            const side2 = parseFloat(document.getElementById("side2").value);
+            const side3 = parseFloat(document.getElementById("side3").value);   
+            const height = parseFloat(document.getElementById("height").value);
+            const s = (side1 + side2 + side3) / 2;
+            const baseArea = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+            const slantHeight = Math.sqrt((height * height) + ((baseArea / (3 * side1))*(baseArea / (3 * side1))));
+            const lateralArea = 3 * 0.5 * side1 * slantHeight;
+
+            const surfaceArea = baseArea + lateralArea;
+            const volume = (1/3) * baseArea * height;
+
+            document.getElementById("TriPyresult").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+
+        function calculatePentagonalPrism() {
+            const baseEdge = parseFloat(document.getElementById("pen-base-edge").value);
+            const height = parseFloat(document.getElementById("pen-height").value);
+
+            const apothem = (baseEdge / 2) / Math.tan(Math.PI / 5);
+            const baseArea = (5/2) * baseEdge * apothem;
+            const lateralArea = 5 * baseEdge * height;
+            const surfaceArea = 2 * baseArea + lateralArea;
+            const volume = baseArea * height;
+
+
+            document.getElementById("pen-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateHexagonalPrism() {
+            const baseEdge = parseFloat(document.getElementById("hex-base-edge").value);
+            const height = parseFloat(document.getElementById("hex-height").value);
+           
+            const apothem = (baseEdge / 2) / Math.tan(Math.PI / 6);
+            const baseArea = (3 * Math.sqrt(3) / 2) * baseEdge * baseEdge;
+            const lateralArea = 6 * baseEdge * height;
+            const surfaceArea = 2 * baseArea + lateralArea;
+            const volume = baseArea * height;
+
+            document.getElementById("hex-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateHexagonalPyramid() {
+            const baseEdge = parseFloat(document.getElementById("hex-py-Base-edge").value);
+            const height = parseFloat(document.getElementById("Hex-py-height").value);
+           
+            const volume = Math.sqrt(3) / 2 * (baseEdge * baseEdge) * height;
+            const surfaceArea = 3 * Math.sqrt(3) / 2 * (baseEdge * baseEdge) + 3 * baseEdge * Math.sqrt((height * height) + 3 * (baseEdge * baseEdge) / 4);
+            
+
+            document.getElementById("Hex-py-result").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateTorus() {
+            const r1 = parseFloat(document.getElementById("torus-minor-radius").value);
+            const r2 = parseFloat(document.getElementById("torus-major-radius").value);
+           
+            const surfaceArea = 4 * (Math.PI * Math.PI) * r1 * r2;
+            const volume = ( Math.PI * (r1 * r1)) * (2 * Math.PI * r2);
+
+            document.getElementById("Torus").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateElipsoid() {
+            const a1 = parseFloat(document.getElementById("axis-1").value);
+            const a2 = parseFloat(document.getElementById("axis-2").value);
+            const a3 = parseFloat(document.getElementById("axis-3").value);
+            const p = 1.6075;
+           
+            const surfaceArea = 4 * Math.PI * Math.pow((Math.pow(a1 * a2, p) + Math.pow(a1 * a3, p) + Math.pow(a2 * a3, p)) / 3, 1 / p);
+            const volume = 4 / 3 * Math.PI * a1 * a2 * a3;
+
+            document.getElementById("Elipsoid").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateParaboloid() {
+            const r = parseFloat(document.getElementById("paraboloidRadius").value);
+            const h = parseFloat(document.getElementById("paraboloidHeight").value);
+           
+            const surfaceArea = Math.PI * r * Math.sqrt(Math.pow(r, 2) + 4 * Math.pow(h, 2));
+            const volume = (1 / 2) * Math.PI * Math.pow(r, 2) * h;
+
+            document.getElementById("Para").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateHyperboloid() {
+            const R1 = parseFloat(document.getElementById('hyperboloidR1').value);
+            const R2 = parseFloat(document.getElementById('hyperboloidR2').value);
+            const h = parseFloat(document.getElementById('hyperboloidHeight').value);
+            const R = parseFloat(document.getElementById('hyperboloidR').value);
+            const c = h / 2;
+          
+            const volume = (1 / 3) * Math.PI * h * (Math.pow(R1, 2) + R1 * R2 + Math.pow(R2, 2));
+            const surfaceArea = 2 * Math.PI * R * Math.sqrt(Math.pow(R, 2) + Math.pow(c, 2));
+
+            document.getElementById("Hyper").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculatePentagonalPyramid() {
+            const a = parseFloat(document.getElementById("sideLength").value);
+            const h = parseFloat(document.getElementById("height").value);
+            const sl = parseFloat(document.getElementById("slantHeight").value);
+            const ba = (1 / 4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(a, 2);
+            const lsa = (5 / 2) * a * sl;
+
+            const volume = (1 / 3) * ba * h;
+            const surfaceArea = ba + lsa;
+
+            document.getElementById("Pent").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateIcosahedron() {
+            const a = parseFloat(document.getElementById("edgeLength5").value);
+
+            const volume = (5 / 12) * (3 + Math.sqrt(5)) * Math.pow(a, 3);
+            const surfaceArea = 5 * Math.sqrt(3) * Math.pow(a, 2);
+
+            document.getElementById("Icosa").textContent = `Surface Area: ${surfaceArea.toFixed(2)} units²
+Volume: ${volume.toFixed(2)} units³`;
+        }
+
+        function calculateHeptagonalPyramid() {
+        const sideLength1 = parseFloat(document.getElementById("heptagonSide1").value);
+        const height1 = parseFloat(document.getElementById("heptagonHeight1").value);
+        const apothem1 = calculateApothem(sideLength1, 7);
+        const baseArea1 = calculatePolygonArea(sideLength1, 7);
+        const slantHeight1 = Math.sqrt(height1**2 + apothem1**2);
+        const lateralArea1 = 0.5 * 7 * sideLength1 * slantHeight1;
+
+        const surfaceArea = baseArea1 + lateralArea1;
+        const volume = (1/3) * baseArea1 * height1;
+        }
+
+
+  </script>
+</body>
+</html>
